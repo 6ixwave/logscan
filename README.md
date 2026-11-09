@@ -1,14 +1,14 @@
-# logscan
+# logscan-cli
 
-Lightweight log file analyzer and parser. Zero external dependencies (stdlib only).
+Lightweight log file analyzer and parser. **Zero external dependencies** (stdlib only).
 
 ## Install
 
 ```bash
-pip install -e .
-# or
-pip install logscan
+pip install logscan-cli
 ```
+
+Or grab the wheel from [GitHub Releases](https://github.com/6ixwave/logscan/releases/tag/v0.1.0).
 
 ## Quick start
 
@@ -70,6 +70,14 @@ spikes = analyzer.spike_detection(threshold=3.0)
 | `--lines N` | Max lines to parse |
 | `--quiet` | Report only, no sample entries |
 
+## Features
+
+- **Parse**: syslog, nginx, Apache, JSON Lines, custom regex
+- **Analyze**: error rate, level distribution, top messages, spike detection
+- **Report**: human-readable terminal output with stats
+- **Zero deps**: pure Python stdlib, works on 3.10+
+- **Cross-platform**: Linux, macOS, Windows
+
 ## License
 
-MIT
+MIT — use it anywhere, even commercially.
