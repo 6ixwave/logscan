@@ -1,0 +1,20 @@
+2026-11-09 10:00:01 INFO Application started (v3.2.1)
+2026-11-09 10:00:02 INFO Loading configuration from /etc/app/config.yaml
+2026-11-09 10:00:03 WARNING Config option 'cache_size' is deprecated, use 'cache.max_size'
+2026-11-09 10:00:15 INFO Database connection established (pool=10, host=db.internal:5432)
+2026-11-09 10:01:22 ERROR Failed to connect to upstream: timeout after 30s (host=api.partner.com)
+2026-11-09 10:01:23 INFO Retrying connection (attempt 2/3)
+2026-11-09 10:01:25 INFO Database connection re-established
+2026-11-09 10:02:00 INFO Processing batch #4521 (1200 records)
+2026-11-09 10:02:01 WARNING Slow query detected: SELECT * FROM orders WHERE status='pending' (2.3s)
+2026-11-09 10:02:05 INFO Batch #4521 completed in 5.2s
+2026-11-09 10:03:00 ERROR Out of memory: killed process 12345 (java, rss=4.2GB)
+2026-11-09 10:03:01 CRITICAL Service 'payment-gateway' is DOWN (health check failed 3/3)
+2026-11-09 10:03:02 INFO Failover: switching to secondary payment processor
+2026-11-09 10:03:05 INFO Service 'payment-gateway' recovered (latency=45ms)
+2026-11-09 10:04:00 DEBUG Cache hit ratio: 87.3% (14201/16267)
+2026-11-09 10:05:00 INFO Heartbeat OK (latency=12ms, uptime=42d 3h)
+2026-11-09 10:06:00 INFO Processing batch #4522 (850 records)
+2026-11-09 10:06:03 INFO Batch #4522 completed in 3.1s
+2026-11-09 10:07:00 WARNING Disk usage at 78% on /var/log (threshold 80%)
+2026-11-09 10:08:00 INFO Heartbeat OK (latency=11ms, uptime=42d 3h)

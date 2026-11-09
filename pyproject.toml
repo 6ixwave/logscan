@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logscan"
+version = "0.1.0"
+description = "Lightweight log file analyzer and parser — zero dependencies"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "logscan"}]
+keywords = ["log", "parser", "analyzer", "syslog", "nginx", "apachelog"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+logscan = "logscan.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["logscan*"]
