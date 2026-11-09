@@ -86,3 +86,7 @@ MIT вЂ” use it anywhere, even commercially.
 
 - [Procedural Material Pack](https://github.com/6ixwave/procedural-material-pack) — 12 free PBR materials for Blender (CC0)
 
+
+---
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-6edbf6?logo=githubsponsors)](https://github.com/sponsors/6ixwave) | [Ko-fi](https://ko-fi.com/6ixwave)
+
