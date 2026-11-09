@@ -1,4 +1,4 @@
-# logscan-cli
+﻿# logscan-cli
 
 Lightweight log file analyzer and parser. **Zero external dependencies** (stdlib only).
 
@@ -80,4 +80,9 @@ spikes = analyzer.spike_detection(threshold=3.0)
 
 ## License
 
-MIT — use it anywhere, even commercially.
+MIT вЂ” use it anywhere, even commercially.
+
+## Related
+
+- [Procedural Material Pack](https://github.com/6ixwave/procedural-material-pack) — 12 free PBR materials for Blender (CC0)
+
