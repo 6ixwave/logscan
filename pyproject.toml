@@ -1,25 +1,31 @@
-[build-system]
-requires = ["setuptools>=68.0"]
+﻿[build-system]
+requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "logscan"
+name = "logscan-cli"
 version = "0.1.0"
-description = "Lightweight log file analyzer and parser — zero dependencies"
+description = "Lightweight log file analyzer and parser - zero dependencies"
 readme = "README.md"
 license = {text = "MIT"}
-requires-python = ">=3.9"
-authors = [{name = "logscan"}]
-keywords = ["log", "parser", "analyzer", "syslog", "nginx", "apachelog"]
+requires-python = ">=3.10"
+authors = [{name = "6ixwave"}]
+keywords = ["log", "parser", "analyzer", "cli", "syslog", "nginx", "apache"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Topic :: Utilities",
-    "Environment :: Console",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Topic :: System :: Logging",
+    "Topic :: Utilities",
 ]
+entry-points = {console-scripts = {logscan = "logscan.cli:main"}}
 
-[project.scripts]
-logscan = "logscan.cli:main"
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
 
 [tool.setuptools.packages.find]
 include = ["logscan*"]
