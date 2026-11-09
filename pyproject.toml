@@ -1,4 +1,4 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
@@ -22,10 +22,9 @@ classifiers = [
     "Topic :: System :: Logging",
     "Topic :: Utilities",
 ]
-entry-points = {console-scripts = {logscan = "logscan.cli:main"}}
 
-[project.optional-dependencies]
-dev = ["pytest", "ruff"]
+[project.scripts]
+logscan = "logscan.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["logscan*"]
